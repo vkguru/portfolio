@@ -1,6 +1,7 @@
 .nav {
   width: 100%;
   display: flex;
+  padding-top: 10px;
 
   & .logo {
     width: 30%;
@@ -60,7 +61,7 @@
 
 .menuOpen {
   position: fixed;
-  width: 90%;
+  width: 85%;
   height: 100vh;
   background: inherit;
   margin: auto;

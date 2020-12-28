@@ -21,7 +21,9 @@ export default function Home() {
                 I am a frontend developer who is a passionate about building scalable products that solves human problems.
               </p>
             </div>
-            <Link href="mailto:hello@vcreate.me" className={styles.cta}>Send a mail</Link>
+            <div className={styles.cta}>
+              <Link href="mailto:hello@vcreate.me"><a>Currently Open to Opportunities</a></Link>
+            </div>
           </section>
         </div>
       </div>

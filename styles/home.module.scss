@@ -9,16 +9,10 @@
 
 .self {
   width: 100%;
-  padding-top: 2rem;
-
-  & a {
-    border: 1px solid #fff;
-    padding: 10px 20px;
-  }
 }
 
 .intro {
-  width: 60%;
+  width: 70%;
   font-size: 2.5rem;
   
   & h1 {
@@ -31,7 +25,23 @@
 
   & p {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 30px;
+  }
+
+}
+
+.cta {
+  padding-top: 2rem;
+
+  & a {
+    border: 1px solid #fff;
+    padding: 15px;
+    font-weight: 500;
+
+    &:hover{
+      background: #fff;
+      color: #101010;
+    }
   }
 
 }

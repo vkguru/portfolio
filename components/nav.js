@@ -21,7 +21,9 @@ export default function Nav() {
       <nav className={navStyles.nav}>
         <div className={navStyles.logo}>
           <Link href="/">
-            <Image src="/vcreate-logo.png" width={300} height={100} loading="eager" alt="Victor Nwoguru logo" />
+            <a>
+              <Image src="/vcreate_logo.png" width={82} height={75} loading="eager" alt="Victor Nwoguru logo" />
+            </a>
           </Link>
         </div>
         <div className={navStyles.menu}>
@@ -37,9 +39,9 @@ export default function Nav() {
         <div className={navStyles.menuOpen}>
           <div className={navStyles.menuList}>
             <ul>
-              <li><Link href="/">About</Link></li>
-              <li><Link href="/">Works</Link></li>
-              <li><Link href="/">Contact</Link></li>
+              <li><Link href="/"><a>About</a></Link></li>
+              <li><Link href="/works"><a>Works</a></Link></li>
+              <li><Link href="/"><a>Contact</a></Link></li>
             </ul>
           </div>
         </div>
