@@ -9,6 +9,7 @@
 
 .self {
   width: 100%;
+  padding-top: 20px;
 }
 
 .intro {
@@ -44,4 +45,19 @@
     }
   }
 
+}
+
+.works {
+  width: 100%;
+  padding-top: 20px;
+
+  & p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.social {
+  padding-top: 3rem;
 }
