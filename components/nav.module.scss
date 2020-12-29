@@ -1,3 +1,5 @@
+@import '../styles/var.scss';
+
 .nav {
   width: 100%;
   display: flex;
@@ -22,7 +24,7 @@
       cursor: pointer;
       
       & span {
-        background-color: #fff;
+        background-color: $light;
         border-radius: 5px;
         width: 100%;
         height: 2px;
