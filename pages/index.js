@@ -1,9 +1,12 @@
 import Header from '../components/header'
 import Nav from '../components/nav'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { fadeUp, fadeIn, fadeupHome, fadeupHomeTwo, fadeupHomeThree } from './animate'
 import styles from '../styles/home.module.scss'
 
 export default function Home() {
+
   return (
     <>
       <Header siteTitle = 'Victor Nwoguru | Front-End Developer' />
@@ -12,19 +15,24 @@ export default function Home() {
           <Nav />
           <section className={styles.self}>
             <div className={styles.intro}>
-              <h1>Hello, I am <br/> <span className={styles.name}>Victor Nwoguru</span></h1>
+              <motion.h1 initial="hidden" animate="moveup" variants={fadeUp}>
+                Hello, I am <br/> 
+                <motion.span initial="hidden" animate="moveup" variants={fadeIn} className={styles.name}>
+                  Victor Nwoguru
+                </motion.span>
+              </motion.h1>
             </div>
             <div className={styles.intro}>
-              <p>
+              <motion.p initial="hidden" animate="moveup" variants={fadeupHome}>
                 I am a constantly evolving frontend developer who is passionate about building scalable, beautiful, interactive and user friendly web apps.
                 I am a life-long learner which means that I constantly expose myself to resources so as stay relevant in the industry. The technologies I have 
-                used are JavaScript(ES6+), Reactjs, Nextjs, Vuejs, Vuex and still counting...
-              </p>
+                used are JavaScript(ES6+), Reactjs, Nextjs, Sass/Scss, Vuejs, Vuex and still counting...
+              </motion.p>
             </div>
-            <div className={styles.cta}>
+            <motion.div initial="hidden" animate="moveup" variants={fadeupHomeTwo} className={styles.cta}>
               <Link href="mailto:hello@vcreate.me"><a>Currently Open to Opportunities</a></Link>
-            </div>
-            <div className={styles.social}>
+            </motion.div>
+            <motion.div initial="hidden" animate="moveup" variants={fadeupHomeThree} className={styles.social}>
               <Link href="https://github.com/vkguru">
                 <a target="_blank">
                   <svg enableBackground="new 0 0 24 24" height="25" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg>
@@ -45,7 +53,7 @@ export default function Home() {
                   <svg height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg"><path d="m301 256c0 24.851562-20.148438 45-45 45s-45-20.148438-45-45 20.148438-45 45-45 45 20.148438 45 45zm0 0"/><path d="m332 120h-152c-33.085938 0-60 26.914062-60 60v152c0 33.085938 26.914062 60 60 60h152c33.085938 0 60-26.914062 60-60v-152c0-33.085938-26.914062-60-60-60zm-76 211c-41.355469 0-75-33.644531-75-75s33.644531-75 75-75 75 33.644531 75 75-33.644531 75-75 75zm86-146c-8.285156 0-15-6.714844-15-15s6.714844-15 15-15 15 6.714844 15 15-6.714844 15-15 15zm0 0"/><path d="m377 0h-242c-74.4375 0-135 60.5625-135 135v242c0 74.4375 60.5625 135 135 135h242c74.4375 0 135-60.5625 135-135v-242c0-74.4375-60.5625-135-135-135zm45 332c0 49.625-40.375 90-90 90h-152c-49.625 0-90-40.375-90-90v-152c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0"/></svg>
                 </a>
               </Link>
-            </div>
+            </motion.div>
           </section>
         </div>
       </div>
