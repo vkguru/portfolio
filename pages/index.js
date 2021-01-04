@@ -2,7 +2,7 @@ import Header from '../components/header'
 import Nav from '../components/nav'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { fadeUp, fadeIn, fadeupHome, fadeupHomeTwo, fadeupHomeThree } from './animate'
+import { fadeUp, fadeIn, fadeupHome, fadeupHomeTwo, fadeupHomeThree } from '../components/animate'
 import styles from '../styles/home.module.scss'
 
 export default function Home() {

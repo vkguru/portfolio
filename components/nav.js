@@ -7,7 +7,7 @@ import { navFadeUp,
   navFadeUpTwo, 
   fadeupHomeThree,
   rotate,
-  rotate_ } from '../pages/animate'
+  rotate_ } from '../components/animate'
 import navStyles from '../components/nav.module.scss'
 
 export default function Nav() {
