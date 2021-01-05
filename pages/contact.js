@@ -1,6 +1,8 @@
 import Header from '../components/header'
 import Nav from '../components/nav'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { fadeUp } from '../components/animate'
 import styles from '../styles/home.module.scss'
 
 export default function Contact() {
@@ -11,7 +13,7 @@ export default function Contact() {
     <div className={styles.landing}>
       <div className={styles.container}>
         <Nav />
-        <section className={styles.contact}>
+        <motion.section className={styles.contact} initial="hidden" animate="moveup" variants={fadeUp}>
 
           <h2>Contact</h2>
 
@@ -25,7 +27,7 @@ export default function Contact() {
             </ul>
           </div>
 
-        </section>
+        </motion.section>
       </div>
     </div>
     </>
