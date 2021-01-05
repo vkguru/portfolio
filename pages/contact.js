@@ -1,0 +1,33 @@
+import Header from '../components/header'
+import Nav from '../components/nav'
+import Link from 'next/link'
+import styles from '../styles/home.module.scss'
+
+export default function Contact() {
+
+  return (
+    <>
+    <Header siteTitle = 'Works | Victor Nwoguru' />
+    <div className={styles.landing}>
+      <div className={styles.container}>
+        <Nav />
+        <section className={styles.contact}>
+
+          <h2>Contact</h2>
+
+          <div className={styles.socialC}>
+            <p>I will love you to connect with me. You can find me on;</p>
+            <ul>
+              <li><Link href="https://twitter.com/vichukwu"><a target="_blank">Twitter</a></Link></li>
+              <li><Link href="https://www.linkedin.com/in/victor-nwoguru/"><a target="_blank">LinkedIn</a></Link></li>
+              <li><Link href="https://github.com/vkguru"><a target="_blank">GitHub</a></Link></li>
+              <li><Link href="mailto:hello@vcreate.me"><a target="_blank">Email</a></Link></li>
+            </ul>
+          </div>
+
+        </section>
+      </div>
+    </div>
+    </>
+  )
+}
