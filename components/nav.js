@@ -59,7 +59,7 @@ export default function Nav() {
                 <Link href="/"><a>About</a></Link>
               </motion.li>
               <motion.li initial="hidden" animate="moveup" variants={navFadeUpOne}>
-                <Link href="https://vkguru.hashnode.dev"><a>Articles</a></Link>
+                <Link href="https://vkguru.hashnode.dev"><a target="_blank">Articles</a></Link>
               </motion.li>
               <motion.li initial="hidden" animate="moveup" variants={navFadeUpTwo}>
                 <Link href="/contact"><a>Contact</a></Link>
