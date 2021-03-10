@@ -26,7 +26,7 @@ export default function Home() {
               <motion.p initial="hidden" animate="moveup" variants={fadeupHome}>
                 I am a constantly evolving frontend developer who is passionate about building scalable, beautiful, interactive and user friendly web apps.
                 I am a life-long learner which means that I constantly expose myself to resources so as stay relevant in the industry. The technologies I have 
-                used are JavaScript(ES6+), Reactjs, Redux, Nextjs, Gatsby, Sass/Scss, Vuejs, Vuex to mention but a few.
+                used are JavaScript, Reactjs, Redux, Nextjs, Gatsby, Sass/Scss, Vuejs, Vuex to mention but a few.
               </motion.p>
             </div>
             <motion.div initial="hidden" animate="moveup" variants={fadeupHomeTwo} className={styles.cta}>
